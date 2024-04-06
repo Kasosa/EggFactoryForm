@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт</title>
+</head>
+<body>
+    <h1>Форма для ЗАО Птицефабрика №1</h1>
+    <form action="/submit_form" method="post">
+        Фамилия: <input type="text" name="surname" size="20" maxlength="50"><br>
+        Инициалы: <input type="text" name="initials" size="20" maxlength="50"><br>
+        Пароль: <input type="password" name="password" size="20" maxlength="50"><br>
+        Адрес получателя: <input type="text" name="recipient_address" size="35" maxlength="50"><br>
+        Количество: <input type="text" name="quantity" size="5" maxlength="50"><br>
+        Тип яиц: 
+        <select name="type">
+            <option value="Куринные">Куринные</option>
+            <option value="Перепелиные">Перепелиные</option>
+            <option value="Индейки">Индейки</option>   
+        </select><br>
+        Характеристики:
+        <select name="characteristics">
+            <option value="C0">C0</option>
+            <option value="C1">C1</option>
+            <option value="C2">C2</option>
+        </select><br>
+        Способ Доставка:<br>
+        <input type="checkbox" name="delivery" value="Почтой"> Почтой <br>
+        <input type="checkbox" name="delivery" value="Электронно"> Электронно <br>
+        <input type="checkbox" name="delivery" value="Курьером"> Курьером <br>
+        <input type="checkbox" name="invoice" value="Требуется накладная"> Требуется накладная <br>
+        Дополнительная информация:<br> 
+        <textarea name="additional_info" rows="5" cols="50"></textarea><br>
+        <input type="submit" name="submit_button" value="Заказать">
+        <input type="reset" value="Отменить">
+    </form>
+</body>
+</html>
